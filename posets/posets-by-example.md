@@ -36,7 +36,7 @@ As an example, consider a (very simplified) iterative approach to writing softwa
 
 The arrows are straightforward: we must `Define Requirements` before `Write Code`, and `Write Code` before `Test Solution`. We can also combine those according to rule (2) - so `Define Requirements` before `Test Solution`.  
 
-What about the loop?  That's OK according to rule 1.  It says it's OK for `Define Requirements` to come before itself.  
+What about the loop?  That's OK according to rule 1.  It says any task must be "less than or equal to" itself.  `Define Requirements` equals itself, so it satisfies rule 1 (as do all the others in the loop, for the same reason).  
 
 Note also there's no arrow connecting `Write Code` and `Write Tests`.  Again, that's fine: there's nothing in the rules to say *every* task must be related to every other.  
 
