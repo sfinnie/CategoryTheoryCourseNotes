@@ -1,6 +1,6 @@
-Posting this as someone who learns best from concrete examples and geometric representations, on the basis that trying to explain something is a good way to test one's understanding.  I ask forbearance from those with more natural mathematical ability.  Corrections or comments gratefully received.
+Posting this as someone who learns best from concrete examples and geometric representations, on the basis that trying to explain something is a good way to test one's understanding.  If it's inappropriate for the forum please just say.  I ask forbearance from those with more natural mathematical ability.  Corrections or comments gratefully received.
 
-The examples below all consider the subject matter of completing tasks.  Assume order means "must be completed before": so \\(x \le y\\) means "task \\(x\\) must be completed before task \\(y\\)".
+The examples below all consider the subject matter of completing tasks.  Assume order means "must be completed before": so \\(x \le y\\) means "task \\(x\\) must be completed before task \\(y\\)".  Note I've used 'arrow' in the geometric sense, not the categorical one.
 
 ## The Landscape
 
@@ -31,7 +31,7 @@ Preorders must obey 2 rules:
 
 As an example, consider a (very simplified) iterative approach to writing software:
 
-![Preorder Example](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/posets/img/dcg.png)
+![Preorder Example](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/posets/img/preorder.png)
 
 The arrows are straightforward: we must `Define Requirements` before `Write Code`, and `Write Code` before `Test Solution`. We can also combine those according to rule (2) - so `Define Requirements` before `Test Solution`.  
 
@@ -45,9 +45,9 @@ Posets obey both rules for Preorders, and add a third:
 
 1. **antisymmetry**: if \\(x \le y\\) and \\(y \le \\x) then \\(x = y\\)
 
-Our iterative process above fails this rule.  Why?  Substitute `Define Requirements` for \\(x\\) and `Test Solution` for \\(y\\) in the antisymmetry rule.  `Define Requirements` does come before `Test Solution` so \\(x \le y\\).  `Test Solution` also comes before `Define Requirements`.  So \\(y \le x\\).  But `Define Requirements` is a different task to `Test Solution`.  So \\(x = y\\) is not true.  So the iterative process isn't antisymmetric: it's not a poset.  We can make it so by removing the loop, and creating a "waterfall" process:
+Our iterative process above fails this rule.  Why?  Substitute `Define Requirements` for \\(x\\) and `Test Solution` for \\(y\\) in the antisymmetry rule.  `Define Requirements` does come before `Test Solution` so \\(x \le y\\).  `Test Solution` also comes before `Define Requirements`.  So \\(y \le x\\).  But `Define Requirements` is a different task to `Test Solution`.  So \\(x = y\\) is not true.  So the iterative process isn't antisymmetric: it's not a poset.  We can make it so by removing the loop, and creating a [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model):
 
-![Poset Example](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/posets/img/dag.png)
+![Poset Example](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/posets/img/poset.png)
 
 
 ## Orders
