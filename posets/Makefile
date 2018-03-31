@@ -2,7 +2,7 @@
 #dot dag.dot -Tpng -o generated/dag.png
 
 %.png : %.dot
-	    dot -Tpng -o png/$@ $<
+	    dot -Tpng -o img/$@ $<
 
 all: $(addsuffix .png, $(basename $(wildcard *.dot)))
 

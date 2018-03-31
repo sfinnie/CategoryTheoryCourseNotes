@@ -1,9 +1,0 @@
-digraph G {
-	"Peel Carrots"  -> "Cook Carrots"
-	"Peel Potatoes" -> "Cook Potatoes"
-	"Season Meat"   -> "Cook Meat"
-	"Pre-heat Oven" -> "Cook Meat"
-	"Cook Carrots"  -> "Eat Dinner"
-	"Cook Potatoes" -> "Eat Dinner"
-	"Cook Meat"     -> "Eat Dinner"	
-}

@@ -1,0 +1,7 @@
+digraph G {
+	"Define Requirements" -> "Write Code"
+	"Define Requirements" -> "Write Tests"
+	"Write Code"          -> "Test Solution"
+	"Write Tests"         -> "Test Solution"
+	"Test Solution"       -> "Define Requirements"
+}
