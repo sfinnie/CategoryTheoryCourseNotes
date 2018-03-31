@@ -9,6 +9,7 @@ First, a picture:
 ![order Venn Diagram](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/posets/img/orderVennDiagram.gif)
 
 This says:
+
  * Sets are either ordered or unordered
  * All Orders are also Posets
  * All Posets are also Preorders
@@ -43,7 +44,7 @@ Note also there's no arrow connecting `Write Code` and `Write Tests`.  Again, th
 
 Posets obey both rules for Preorders, and add a third:
 
-1. **antisymmetry**: if \\(x \le y\\) and \\(y \le \\x) then \\(x = y\\)
+1. **antisymmetry**: if \\(x \le y\\) and \\(y \le x\\) then \\(x = y\\)
 
 Our iterative process above fails this rule.  Why?  Substitute `Define Requirements` for \\(x\\) and `Test Solution` for \\(y\\) in the antisymmetry rule.  `Define Requirements` does come before `Test Solution` so \\(x \le y\\).  `Test Solution` also comes before `Define Requirements`.  So \\(y \le x\\).  But `Define Requirements` is a different task to `Test Solution`.  So \\(x = y\\) is not true.  So the iterative process isn't antisymmetric: it's not a poset.  We can make it so by removing the loop, and creating a [waterfall process](https://en.wikipedia.org/wiki/Waterfall_model):
 
@@ -56,14 +57,12 @@ Orders obey all the rules for Posets, and add yet another:
 
 1. **trichotomy**: for all \\(x,y\\) we either have \\(x\le y\\) or \\(y \le x\\).
 
-Antisymmetry removed loops in our task ordering.  Trichotomy removes parallel paths.  Why?  Let \\(x\\) be `Write Code` and \\(y\\) be `Write Tests`.  There's no arrow, or sequence of arrows, that connect the two.  So we don't have \\(x,y\\), nor do we have \\(y \le x\\). Trichotomy fails.
+Antisymmetry removed loops in our task ordering.  Trichotomy removes parallel paths.  Why?  Let \\(x\\) be `Write Code` and \\(y\\) be `Write Tests`.  There's no arrow, or sequence of arrows, that connect the two.  So we don't have \\(x \le y\\), nor do we have \\(y \le x\\). Trichotomy fails.
 
 We can resolve that by linearising the process.  Let's follow [Test-Driven Development](https://en.wikipedia.org/wiki/Test-driven_development) and write tests before the code:
 
 ![Order Example](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/posets/img/sequence.png)
 
-
-  Now for some examples
 
 
 
