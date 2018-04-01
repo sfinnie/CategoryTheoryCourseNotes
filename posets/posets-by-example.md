@@ -22,7 +22,7 @@ Consider cleaning the house.  Let's assume there are 3 rooms: bathroom, bedroom 
 
 ![unordered tasks](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/posets/img/unordered.png)
  
-## Preorders
+## Preordered Sets (Preorders)
 
 Preorders must obey 2 rules:
 
@@ -40,7 +40,7 @@ What about the loop?  That's OK according to rule 1.  It says any task must be "
 
 Note also there's no arrow connecting `Write Code` and `Write Tests`.  Again, that's fine: there's nothing in the rules to say *every* task must be related to every other.  
 
-## Posets
+## Partially Ordered Sets (Posets)
 
 Posets obey both rules for Preorders, and add a third:
 
@@ -51,7 +51,7 @@ Our iterative process above fails this rule.  Why?  Substitute `Define Requireme
 ![Poset Example](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/posets/img/poset.png)
 
 
-## Orders
+## Ordered Sets (Orders)
 
 Orders obey all the rules for Posets, and add yet another:
 
