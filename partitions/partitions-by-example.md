@@ -32,5 +32,17 @@ Here's another, alternative definition of a partition drawing on some of the lan
 > 1. Every member of the set is contained in exactly on group, and
 > 1. Every group contains at least one member
 
+### What about the definition in the book?
+
+Partitions are defined in definition 1.8 in the book:
+
+> If \\(A\\) is a set, a *partition* of \\(A\\) consists of a set \\(P\\) and, for each \\(p \in P\\), non-empty subset \\(A_p \ss A\\), such that:
+
+$$ A=\bigcup_{p\in P}A_p \qquad\text{and}\qquad  \text{if }p\neq q\text{ then }A_P\cap A_Q=\emptyset $$
+
+That seems a bit different, so let's break it down.  First, it introduces a new set \\(P\\) with members (\\p\\).  In our example above, P is the set of roles, as follows:
+
+![roles](img/roles.png)
+
 
 
