@@ -1,0 +1,18 @@
+digraph G {
+
+        subgraph cluster_mathematicians {
+            label="Mathematicians"
+            "Fiona"
+            "Aruna"
+            "Malcolm"
+        }
+        subgraph cluster_engineers {
+            label="Engineers"
+            "Wendy"
+            "Guillaume"
+        }
+        subgraph cluster_pm {
+            label="Product Managers"
+            "Sidd"
+        }
+}

@@ -1,0 +1,12 @@
+digraph G {
+
+	subgraph cluster_people {
+		label="People"
+        "Fiona"
+        "Aruna"
+        "Malcolm"
+        "Wendy"
+        "Sidd"
+        "Guillaume"
+	}
+}
