@@ -10,11 +10,11 @@ John describes it as follows in [this comment](https://forum.azimuthproject.org/
 
 That's pretty accessible, even for non-mathematicians like me.  No harm in illustrating with an example.  Let's take a set of colleagues in some fictitious workplace:
 
-![set of people](img/people.png)
+![set of people](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/partitions/img/people.png)
 
 And create a partition based on their roles:
 
-![set of people partitioned by role](img/people-roles.png)
+![set of people partitioned by role](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/partitions/img/people-roles.png)
 
 What makes that a partition?  Let's go back to the definition:
 
@@ -42,7 +42,7 @@ $$ A=\bigcup_{p\in P}A_p \qquad\text{and}\qquad  \text{if }p\neq q\text{ then }A
 
 There's a bit more in there, so let's break it down.  First, it introduces a new set \\(P\\) with members (\\p\\).  This just describes the partition itself, where each subgroup (or *part*) is a member of P.  In our example above, P is the set of roles, as follows:
 
-![roles](img/roles.png)
+![roles](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/partitions/img/roles.png)
 
 So now we have the set \\(A\\) being partitioned, and the set \\(P\\) defining the parts.  Picking up the next part of the definition:
 
@@ -50,7 +50,7 @@ So now we have the set \\(A\\) being partitioned, and the set \\(P\\) defining t
 
 So: each \\(p\\) - each *part* - maps to a non-empty subset of \\(A\\).  That's just what we drew in the partition diagram above.  Here's a slightly different way of drawing it, such that \\(A\\) and \\(P\\) are both shown consistently as sets:
 
-![Mapping of people to roles](img/people-roles-sets.png)
+![Mapping of people to roles](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/partitions/img/people-roles-sets.png)
 
 We can now enumerate the subsets \\(A_p \ss A\\):
 
