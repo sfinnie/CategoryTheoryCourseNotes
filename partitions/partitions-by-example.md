@@ -86,4 +86,36 @@ So far we've only looked at one partition of our People set.  Here's another:
 
 ![Mapping of people to roles](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/partitions/img/people-locations.png)
 
+This partitions based on location as opposed to role.  It only has 2 parts where the role-based partition had 3.  We can compare the two partions as follows:
+
+* The Role partition is ***finer*** than the Location partition
+* The Location partition is ***courser*** than the Role partition
+
+These statements are inverses.  Formally, a partition \\(P_1\\) is finer than \\(P_2\\) if:
+
+1. \\(P_1\\) and \\(P_2\\) partition the same set, and
+2. Every part of \\(P_2\\) is a union of blocks in \\(P_1\\)
+
+Relating that to the Location and Role Partitions:
+
+1. *Auckland* is the union of *Engineers* and *Product Managers*
+2. *Edinburgh* is the same as *Mathematicians*.
+
+But wait: surely Edinburgh isn't a union of Location parts?  Technically it is: *Edinburgh* is the union of *Mathematicians* and the empty set \\(\emptyset\\).  THe empty set is a subset of every set by definition.
+
+### A counter example
+
+It's perhaps tempting to define the finer/courser relation as simply:
+
+* A finer partition has more parts
+
+However, that doesn't work.  Suppose Guillaume moved from Auckland to Edinburgh:
+
+![Mapping of people to roles](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/partitions/img/people-locations2.png)
+
+We can't now relate the revised Location partition with the Role-based alternative.  There's no way to combine the *Product Manager*, *Engineer* and *Mathematician*, using the union operator, to produce the *Edinburgh* and *Auckland* parts.
+
+
+
+
 
