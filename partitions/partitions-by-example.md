@@ -44,7 +44,7 @@ There's a bit more in there, so let's break it down.  First, it introduces a new
 
 ![roles](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/partitions/img/roles.png)
 
-So now we have the set \\(A\\) being partitioned, and the set \\(P\\) defining the parts.  Picking up the next part of the definition:
+We now have the set \\(A\\) being partitioned, and the set \\(P\\) defining the parts.  Picking up the next part of the definition:
 
 > for each \\(p \in P\\), a non-empty subset \\(A_p \ss A\\)
 
@@ -62,7 +62,7 @@ Back to the definition:
 
 $$ A=\bigcup_{p\in P}A_p $$
 
-This says \\((A\\)) is the union \\(\bigcup\\) of all subsets \\(A_p\\) for each \\(p\in P \\).  So \\(A = A_ProductManagers + A_Mathematicians + A_Engineers\\).
+Reading this in natural language, it says \\((A\\)) is the union \\(\bigcup\\) of all subsets \\(A_p\\) for each \\(p\in P \\).  So \\(A = A_ProductManagers + A_Mathematicians + A_Engineers\\).
 
 And so the final component of the definition:
 
@@ -73,5 +73,17 @@ This is the 'disjoint', or non-overlapping clause. Translating that literally in
 > If p isn't equal to q, then the intersection of subsets \\(A_P\\) and \\(A_Q\\) is the empty set.  
 
 Less prosaically, \\(A_P\\) and \\(A_Q\\) don't share any members unless \\(p = q\\) (in which case \\(p\\) and \\(q\\) represent the same element).
+
+We're back to where we started now.  \\(P\\) is a partition of \\(A\\) because:
+
+1. \\(P\\) comprises one or more parts 
+2. Each part of \\P\\) contains at least one element of \\(A\\)
+3. Each element of \\(A\\) is contained in exactly one part of \\(P\\)
+
+## Comparing Partitions
+
+So far we've only looked at one partition of our People set.  Here's another:
+
+![Mapping of people to roles](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/partitions/img/people-locations.png)
 
 
