@@ -1,0 +1,15 @@
+digraph G {
+
+        subgraph cluster_Edinburgh {
+            label="Edinburgh"
+            "Fiona"
+            "Aruna"
+            "Guillaume"
+            "Malcolm"
+        }
+        subgraph cluster_Auckland {
+            label="Auckland"
+            "Wendy"
+            "Sidd"
+        }
+}
