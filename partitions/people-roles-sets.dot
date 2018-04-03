@@ -1,0 +1,25 @@
+digraph G {
+    rankdir=LR
+    subgraph cluster_parts {
+        label="Partition Parts"
+        "Product Managers"
+        "Engineers"
+        "Mathematicians"
+    }
+    subgraph cluster_people {
+        label="People"
+        "Fiona"
+        "Aruna"
+        "Malcolm"
+        "Wendy"
+        "Guillaume"
+        "Sidd"
+    }
+
+    "Sidd" -> "Product Managers"
+    "Wendy" -> "Engineers"
+    "Guillaume" -> "Engineers"
+    "Fiona" -> "Mathematicians"
+    "Aruna"  -> "Mathematicians"
+    "Malcolm"  -> "Mathematicians"
+}
