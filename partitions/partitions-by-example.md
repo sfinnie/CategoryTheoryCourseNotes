@@ -36,7 +36,7 @@ Here's a slightly different way of defining a partition, drawing on some of the 
 
 Partitions are introduced in definition 1.8 in the book:
 
-> If \\(A\\) is a set, a *partition* of \\(A\\) consists of a set \\(P\\) and, for each \\(p \in P\\), a non-empty subset \\(A_p \ss A\\), such that:
+> If \\(A\\) is a set, a *partition* of \\(A\\) consists of a set \\(P\\) and, for each \\(p \in P\\), a non-empty subset $A_p \subset A\\), such that:
 
 $$ A=\bigcup_{p\in P}A_p \qquad\text{and}\qquad  \text{if }p\neq q\text{ then }A_P\cap A_Q=\emptyset $$
 
@@ -46,13 +46,13 @@ There's a bit more in there, so let's break it down.  First, it introduces a new
 
 We now have the set \\(A\\) being partitioned, and the set \\(P\\) defining the parts.  Picking up the next part of the definition:
 
-> for each \\(p \in P\\), a non-empty subset \\(A_p \ss A\\)
+> for each \\(p \in P\\), a non-empty subset \\(A_p \subset A\\)
 
 So: each \\(p\\) - each *part* - maps to a non-empty subset of \\(A\\).  That's just what we drew in the partition diagram above.  Here's a slightly different way of drawing it, such that \\(A\\) and \\(P\\) are both shown consistently as sets:
 
 ![Mapping of people to roles](https://raw.githubusercontent.com/sfinnie/CategoryTheoryCourseNotes/master/partitions/img/people-roles-sets.png)
 
-We can now enumerate the subsets \\(A_p \ss A\\):
+We can now enumerate the subsets \\(A_p \subset A\\):
 
 * \((A_ProductManagers = {Sidd}\))
 * \((A_Mathematicians = {Fiona, Aruna, Malcolm}\))
